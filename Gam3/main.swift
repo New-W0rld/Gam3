@@ -16,7 +16,5 @@ func input() -> String {
 
 print("What is your Name?")
 var name = input()
+sleep(1)
 print("Your Name is " + name)
-
-var test = input()
-print(test)
