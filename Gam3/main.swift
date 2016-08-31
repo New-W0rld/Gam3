@@ -14,7 +14,9 @@ func input() -> String {
     return NSString(data: inputData, encoding: NSUTF8StringEncoding) as! String
 }
 
-print("What is your Name?")
+print("Hey, I'm stuck here! You there help me please, what is your Name? ")
 var name = input()
 sleep(1)
-print("Your Name is " + name)
+print("Your Name is " + name,terminator:"")
+sleep(2)
+print("I see, nice to meet you, still kinda crapy situation!")
