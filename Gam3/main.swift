@@ -8,5 +8,15 @@
 
 import Foundation
 
-print("Hello, World!")
+func input() -> String {
+    let keyboard = NSFileHandle.fileHandleWithStandardInput()
+    let inputData = keyboard.availableData
+    return NSString(data: inputData, encoding: NSUTF8StringEncoding) as! String
+}
 
+print("What is your Name?")
+var name = input()
+print("Your Name is " + name)
+
+var test = input()
+print(test)
